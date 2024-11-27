@@ -1,0 +1,91 @@
+.bg-menu {
+  background: #000;
+}
+
+.container-principal {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.menu-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.menu-links a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 12px 0px;
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-links a::after {
+  box-sizing: border-box;
+  content: "";
+  width: 2px;
+  height: 2px;
+  display: block;
+  transition: width 0.7s ease;
+  position: absolute;
+}
+
+.menu-links a:hover::after {
+  width: 100%;
+  background: #fff;
+}
+
+/* responsivo */
+
+@media (max-width: 1000px) {
+  .container-principal {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .menu-links {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .menu-links a {
+    background: #ccc;
+    color: #111;
+    padding: 8px 16px;
+  }
+
+  .menu-links a:hover::after {
+    display: none;
+  }
+
+  .container-principal a img {
+    width: 200px;
+  }
+}
+
+@media (width <= 220px) {
+  .container-principal a img {
+    width: 150px;
+  }
+
+  .menu-links a {
+    padding: 4px;
+  }
+
+  .menu-links a:hover::after {
+    display: none;
+  }
+}
