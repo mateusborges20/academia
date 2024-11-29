@@ -1,0 +1,163 @@
+
+.bg-footer {
+  background: #000; 
+  color: white;
+}
+
+.container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  gap: 120px
+}
+
+.direito-reservados {
+  display: flex;
+  flex-direction: column;
+  gap: 320px;
+}
+
+.flex-contato {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  
+}
+
+.flex-email {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.titulo-contato {
+  margin-bottom: 32px;
+}
+
+.icones {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.txt-1 {
+  margin-bottom: 10px;
+}
+
+.informacoes h3 {
+  margin-bottom: 16px;
+}
+
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-footer a {
+  color: #9C9A9A;
+  text-decoration: none;
+}
+
+.copywirite {
+  font-family: 'Arial', sans-serif;
+  font-weight: 500;
+  line-height: 1.77;
+  font-size: 1.125rem;
+  font-style: normal;
+}
+
+.titulo-contato {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+
+.flex-contato p {
+  color: #9C9A9A;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.33;
+  font-style: normal;
+  font-weight: 100;
+  color: #fff;
+}
+
+
+.flex-email p {
+  color: #9C9A9A;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  font-style: normal;
+  font-weight: 100;
+  color: #fff;
+}
+
+
+.txt-1 {
+  color: #9C9A9A;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.33;
+  font-style: normal;
+  font-weight: 100;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.menu-footer a {
+  color: #9C9A9A;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.33;
+  font-style: normal;
+  font-weight: 100;
+}
+
+
+/* responsivo */
+@media (max-width: 1200px) {
+  .container-footer {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    
+  }
+
+  .direito-reservados {
+    order: 3;
+    gap: 40px;
+  }
+
+
+  .direito-reservados img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .txt-1 {
+    font-size: 0.8rem;
+  }
+
+  .flex-contato p {
+    font-size: 0.8rem;
+  }
+
+  .flex-email p {
+    font-size: 0.8rem;
+  }
+
+  .copywirite {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}

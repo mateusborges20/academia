@@ -1,6 +1,9 @@
 @import "./menu.css";
 @import "./historia.css";
 @import "./diferencial.css";
+@import "./plano.css";
+@import "./footer.css";
+
 
 /* css reset listas */
 body {
@@ -20,4 +23,18 @@ h1, h2, h3, h4, p {
 img {
   max-width: 100%;
   display: block;
+}
+
+.botao {
+  padding: 12px 24px;
+  background-image: linear-gradient(#ffbf00, #F2A50C);
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #332200;
+  display: block;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.5;
+  line-height: 1.28;
 }
