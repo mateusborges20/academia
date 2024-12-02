@@ -43,6 +43,10 @@
   color: #fff;
 }
 
+.alinhar-conteudo h2 {
+  margin-bottom: 60px;
+}
+
 .flex-diferencial {
   justify-content: center;
   padding-bottom: 60px;
@@ -59,4 +63,41 @@
 
 .flex-diferencial li img {
   align-self: center;
+}
+
+/* responsivo */
+
+@media (max-width: 500px) {
+  .titulo-diferencial span {
+    font-size: 1.5rem;
+  }
+
+  .titulo-diferencial {
+    line-height: 1.2;
+  }
+
+  .flex-diferencial {
+    gap: 60px;
+  }
+
+  .flex-diferencial p {
+    font-size: 1.2rem;
+  }
+
+  .flex-diferencial img {
+    height: 80px;
+    width: 80px;
+  }
+
+}
+
+
+@media (max-width: 300px) {
+  .titulo-diferencial span {
+    font-size: 1.3rem;
+  }
+  
+  .titulo-diferencial {
+    font-size: 1.2rem;
+  }
 }
