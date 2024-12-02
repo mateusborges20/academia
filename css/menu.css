@@ -12,6 +12,7 @@
   align-items: center;
 }
 
+
 .menu-links {
   display: flex;
   flex-wrap: wrap;
@@ -50,7 +51,7 @@
 
 /* responsivo */
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   .container-principal {
     flex-direction: column;
     gap: 20px;
