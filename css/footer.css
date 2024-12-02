@@ -1,6 +1,5 @@
-
 .bg-footer {
-  background: #000; 
+  background: #000;
   color: white;
 }
 
@@ -10,7 +9,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
-  gap: 120px
+  gap: 120px;
 }
 
 .direito-reservados {
@@ -23,7 +22,6 @@
   display: flex;
   gap: 12px;
   margin-bottom: 10px;
-  
 }
 
 .flex-email {
@@ -57,12 +55,12 @@
 }
 
 .menu-footer a {
-  color: #9C9A9A;
+  color: #9c9a9a;
   text-decoration: none;
 }
 
 .copywirite {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 500;
   line-height: 1.77;
   font-size: 1.125rem;
@@ -70,7 +68,7 @@
 }
 
 .titulo-contato {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 1.5rem;
   line-height: 1.33;
   font-style: normal;
@@ -79,10 +77,9 @@
   color: #fff;
 }
 
-
 .flex-contato p {
-  color: #9C9A9A;
-  font-family: 'Arial', sans-serif;
+  color: #9c9a9a;
+  font-family: "Arial", sans-serif;
   font-size: 1rem;
   line-height: 1.33;
   font-style: normal;
@@ -90,10 +87,9 @@
   color: #fff;
 }
 
-
 .flex-email p {
-  color: #9C9A9A;
-  font-family: 'Arial', sans-serif;
+  color: #9c9a9a;
+  font-family: "Arial", sans-serif;
   font-size: 1.125rem;
   line-height: 1.33;
   font-style: normal;
@@ -101,10 +97,9 @@
   color: #fff;
 }
 
-
 .txt-1 {
-  color: #9C9A9A;
-  font-family: 'Arial', sans-serif;
+  color: #9c9a9a;
+  font-family: "Arial", sans-serif;
   font-size: 1rem;
   line-height: 1.33;
   font-style: normal;
@@ -114,14 +109,13 @@
 }
 
 .menu-footer a {
-  color: #9C9A9A;
-  font-family: 'Arial', sans-serif;
+  color: #9c9a9a;
+  font-family: "Arial", sans-serif;
   font-size: 1.3rem;
   line-height: 1.33;
   font-style: normal;
   font-weight: 100;
 }
-
 
 /* responsivo */
 @media (max-width: 1200px) {
@@ -129,14 +123,12 @@
     flex-direction: column;
     gap: 40px;
     padding: 20px;
-    
   }
 
   .direito-reservados {
     order: 3;
-    gap: 40px;
+    gap: 30px;
   }
-
 
   .direito-reservados img {
     width: 300px;
@@ -145,11 +137,52 @@
 
 @media (max-width: 500px) {
   .txt-1 {
+    font-size: 1rem;
+  }
+
+  .titulo-contato {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+
+  .flex-contato p {
+    font-size: 1rem;
+  }
+  
+  .direito-reservados img {
+    width: 250px;
+  }
+
+  .flex-email p {
+    font-size: 1rem;
+  }
+
+  .copywirite {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .flex-contato {
+    margin-bottom: 16px;
+  }
+}
+
+
+@media (width <= 320px) {
+  .txt-1 {
     font-size: 0.8rem;
+  }
+
+  .titulo-contato {
+    font-size: 1rem;
   }
 
   .flex-contato p {
     font-size: 0.8rem;
+  }
+  
+  .direito-reservados img {
+    width: 200px;
   }
 
   .flex-email p {
@@ -157,7 +190,7 @@
   }
 
   .copywirite {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.2;
   }
 }
