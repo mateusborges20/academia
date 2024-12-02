@@ -196,6 +196,47 @@
   animation-iteration-count: infinite;
 }
 
+.mensal {
+  /* border: 1px solid red; */
+  padding: 20px;
+  border-radius: 8px;
+  background: #A1A1A1;
+  height: 400px;
+}
+
+
+.mensal h3 {
+  text-align: center;
+  color: #676767;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.por-mes {
+  color: #595959;
+}
+
+.reais-color {
+  color: #595959;
+}
+
+.bottom-preco {
+  margin-bottom: 16px;
+}
+
+.cor-preco {
+  color:  #595959
+}
+
+.lista-planos1 {
+  margin-top: 20px;
+}
+
+.mensal a {
+  margin-top: 40px;
+  text-align: center;
+}
+
 /* criando uma animação */
 
 
@@ -241,5 +282,11 @@
   .arial-p {
     font-size: 0.8rem;
     text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .mensal {
+    height: 320px;
   }
 }
