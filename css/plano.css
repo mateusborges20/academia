@@ -47,9 +47,6 @@
   background-image: linear-gradient(#ffbf00, #dc5c0d);
 }
 
-
-
-
 .flex-preco {
   text-align: center;
 }
@@ -91,21 +88,20 @@
   color: var(--cor-c2);
 }
 
-.titulo-anual{
+.titulo-anual {
   text-align: center;
   margin-top: 12px;
-  color: var(--cor-p1) !important
+  color: var(--cor-p1) !important;
 }
 
 .mes {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
 }
 
 .ponto {
   color: var(--cor-p1);
 }
-
 
 .element-pai {
   position: relative;
@@ -138,7 +134,7 @@
   display: block;
   position: relative;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
   color: var(--cor-p5);
@@ -157,10 +153,9 @@
   /* border: 1px solid red; */
   padding: 20px;
   border-radius: 8px;
-  background: #A1A1A1;
-  height: 400px;
+  background: #a1a1a1;
+  height: 340px;
 }
-
 
 .mensal h3 {
   text-align: center;
@@ -182,7 +177,7 @@
 }
 
 .cor-preco {
-  color:  #595959
+  color: #595959;
 }
 
 .lista-planos1 {
@@ -190,16 +185,15 @@
 }
 
 .mensal a {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
 }
 
 /* criando uma animação */
 
-
 /* responsivo */
 
-@media (max-width : 1024px) {
+@media (max-width: 1024px) {
   .flex-plano {
     gap: 40px;
     justify-content: center;
@@ -227,23 +221,16 @@
   .bg-planos {
     background: #ccc;
   }
-
-
 }
 
-@media (max-width : 400px)  {
+@media (max-width: 400px) {
   .titulo-plano {
     font-size: 2rem;
   }
-  
+
   .arial-p {
     font-size: 0.8rem;
     text-align: center;
   }
 }
 
-@media (max-width: 700px) {
-  .mensal {
-    height: 320px;
-  }
-}
