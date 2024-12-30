@@ -3,7 +3,8 @@
 @import "./diferencial.css";
 @import "./plano.css";
 @import "./footer.css";
-
+@import "./introducao.css";
+@import "./modalidade.css";
 
 /* css reset listas */
 body {
@@ -16,7 +17,11 @@ ul {
   margin: 0px;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0px;
 }
 
@@ -27,14 +32,168 @@ img {
 
 .botao {
   padding: 12px 24px;
-  background-image: linear-gradient(#ffbf00, #F2A50C);
+  background-image: linear-gradient(#ffbf00, #f2a50c);
   text-decoration: none;
   text-transform: capitalize;
   color: #332200;
   display: block;
   border-radius: 4px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   letter-spacing: 1.5;
   line-height: 1.28;
+}
+
+/* cores utilitarias */
+:root {
+  --cor-c12: #000;
+  --cor-c3: #dedede;
+  --cor-c2: #ededed;
+  --cor-c5: #b2b2b2;
+  --cor-p1: #ffbb00;
+  --cor-p5: #332200;
+  --cor-c0: #ffff;
+  --padding: 35px 43px;
+  --bg: #2e2e2e;
+  --cor-c6: #9c9c9c;
+  --cor-c10: #2E2E2E;
+  --cor-texto-f: #9C9A9A;
+}
+
+.bg-c12 {
+  background: var(--cor-c12);
+}
+
+.cor-p5 {
+  color: var(--cor-p5);
+} 
+
+.cor-t-footer {
+  color: var(--cor-texto-f);
+}
+
+.cor-c10 {
+  color: var(--cor-c10);
+}
+
+.cor-c0 {
+  color: var(--cor-c0);
+}
+
+.cor-p1 {
+  color: var(--cor-p1);
+}
+
+.cor-c5 {
+  color: var(--cor-c5);
+}
+
+.cor-c6 {
+  color: var(--cor-c6);
+}
+
+/* font */
+.arial-medium {
+  font-family: "Arial", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.28;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.arial-p {
+  font-family: "Arial", sans-serif;
+  font-weight: 100;
+  font-size: 0.75;
+  line-height: 1.66;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  font-size: 3rem;
+  font-style: normal;
+}
+
+/* novas classes utilitarias */
+.poppins-semibold-p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.25;
+  font-size: 1rem;
+}
+
+.poppins-p-botao {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.roboto-medium-modalidades {
+  font-size: 1.85rem;
+  line-height: 1.33;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-texto-footer {
+  font-size: 1.125rem;
+  line-height: 1.77;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular-titulo {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular-texto {
+  font-size: 1rem;
+  line-height: 1.3;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular-form {
+  font-size: 1rem;
+  line-height: 1.25;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Poppins-medium-titulo-p {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-medium-faq {
+  font-size: 4rem;
+  line-height: 1.125;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.poppins-titulo-footer {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.6;
+  font-style: normal;
 }

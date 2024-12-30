@@ -47,49 +47,6 @@
   background-image: linear-gradient(#ffbf00, #dc5c0d);
 }
 
-/* classes utilitarias */
-:root {
-  --cor-c3: #dedede;
-  --cor-c2: #EDEDED;
-  --cor-c5: #b2b2b2;
-  --cor-p1: #ffbb00;
-  --cor-p5: #332200;
-  --padding: 35px 43px;
-  --bg: #2e2e2e;
-}
-
-/* font */
-.arial-medium {
-  font-family: "Arial", sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.28;
-  font-style: normal;
-  font-weight: 500;
-}
-
-.arial-p {
-  font-family: 'Arial', sans-serif;
-  font-weight: 100;
-  font-size: 0.75;
-  line-height: 1.66;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  line-height: 1.25;
-  font-size: 3rem;
-  font-style: normal;
-}
-
-.poppins-semibold-p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  line-height: 1.25;
-  font-size: 1rem;
-}
 
 
 
@@ -242,7 +199,7 @@
 
 /* responsivo */
 
-@media (max-width : 1020px) {
+@media (max-width : 1024px) {
   .flex-plano {
     gap: 40px;
     justify-content: center;
