@@ -73,7 +73,7 @@
     gap: 50px;
   }
   .item-modalidade {
-    width: 340px;
+    width: 300px;
   }
 
   .modalidades-bg {
@@ -90,9 +90,9 @@
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 475px) {
   .item-modalidade {
-    width: 260px;
+    width: 200px;
   }
 
   .modalidade-container .texto-modalidade {
@@ -105,9 +105,9 @@
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 320px) {
   .item-modalidade {
-    width: 190px;
+    width: 140px;
   }
 
   .modalidade-container h3,
