@@ -3,194 +3,166 @@
   color: white;
 }
 
+.copy {
+  text-align: center;
+  padding: 20px;
+}
+
 .container-footer {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
-  gap: 120px;
 }
 
-.direito-reservados {
+.formulario {
   display: flex;
   flex-direction: column;
-  gap: 320px;
+  gap: 16px;
 }
 
-.flex-contato {
+.flex-formulario input {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 12px;
+}
+
+.flex-formulario textarea {
+  width: 250px;
+}
+
+.flex-formulario button {
+  margin-top: 12px;
+}
+
+.flex-redes {
   display: flex;
-  gap: 12px;
-  margin-bottom: 10px;
-}
-
-.flex-email {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 15px;
-}
-
-.titulo-contato {
-  margin-bottom: 32px;
-}
-
-.icones {
-  display: flex;
-  gap: 32px;
-  margin-top: 32px;
-}
-
-.txt-1 {
-  margin-bottom: 10px;
-}
-
-.informacoes h3 {
-  margin-bottom: 16px;
-}
-
-.menu-footer {
-  display: flex;
-  flex-direction: column;
   gap: 8px;
 }
 
-.menu-footer a {
-  color: #9c9a9a;
-  text-decoration: none;
+.funcionamento {
+  margin-bottom: 32px;
 }
 
-.copywirite {
-  font-family: "Arial", sans-serif;
-  font-weight: 500;
-  line-height: 1.77;
-  font-size: 1.125rem;
-  font-style: normal;
+.redes-sociais {
+  display: flex;
+  gap: 20px;
 }
 
-.titulo-contato {
-  font-family: "Arial", sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.33;
-  font-style: normal;
-  font-weight: 500;
-  text-transform: uppercase;
+.endereco-text {
+  margin-bottom: 32px;
+}
+
+.informacoes-footer img {
+  margin-bottom: 40px;
+}
+
+.endereco h3 {
+  margin-bottom: 4px;
+}
+
+.formulario input,
+textarea {
+  border: 2px solid var(--cor-c2);
+  background: #000;
   color: #fff;
+  border-radius: 4px;
 }
 
-.flex-contato p {
-  color: #9c9a9a;
-  font-family: "Arial", sans-serif;
-  font-size: 1rem;
-  line-height: 1.33;
-  font-style: normal;
-  font-weight: 100;
-  color: #fff;
+.formulario button {
+  width: 250px;
+  border: 0;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  letter-spacing: 0.04rem;
 }
 
-.flex-email p {
-  color: #9c9a9a;
-  font-family: "Arial", sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.33;
-  font-style: normal;
-  font-weight: 100;
-  color: #fff;
+.formulario h3 {
+  width: 250px;
+  text-align: center;
 }
 
-.txt-1 {
-  color: #9c9a9a;
-  font-family: "Arial", sans-serif;
-  font-size: 1rem;
-  line-height: 1.33;
-  font-style: normal;
-  font-weight: 100;
-  color: #fff;
-  margin-top: 15px;
+.informacoes-footer,
+.formulario {
+  justify-self: center;
 }
 
-.menu-footer a {
-  color: #9c9a9a;
-  font-family: "Arial", sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.33;
-  font-style: normal;
-  font-weight: 100;
-}
-
-/* responsivo */
-@media (max-width: 1200px) {
+@media (max-width: 450px) {
   .container-footer {
-    flex-direction: column;
-    gap: 40px;
-    padding: 20px;
+    grid-template-columns: 1fr;
   }
 
-  .direito-reservados {
-    order: 3;
-    gap: 30px;
+  .redes-sociais {
+    justify-self: center;
   }
 
-  .direito-reservados img {
-    width: 300px;
-  }
-}
-
-@media (max-width: 500px) {
-  .txt-1 {
-    font-size: 1rem;
-  }
-
-  .titulo-contato {
+  .informacoes-footer div h3 {
     font-size: 1.2rem;
-    margin-bottom: 16px;
   }
 
-  .flex-contato p {
+  .informacoes-footer div p {
     font-size: 1rem;
   }
-  
-  .direito-reservados img {
-    width: 250px;
+  .copy {
+    font-size: 0.9rem !important;
+    line-height: 1.1 !important;
   }
+}
 
-  .flex-email p {
+@media (max-width: 320px) {
+  .informacoes-footer div h3 {
     font-size: 1rem;
   }
 
-  .copywirite {
-    font-size: 1rem;
-    line-height: 1.2;
+  .marca-footer {
+    width: 200px;
+    margin: auto;
   }
 
-  .flex-contato {
-    margin-bottom: 16px;
+  .funcionamento,
+  .endereco-rua,
+  .endereco-email,
+  .redes-sociais {
+    justify-self: center;
+  }
+
+  .endereco-wha {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    justify-content: center;
+  }
+
+
+  .informacoes-footer div p {
+    font-size: 0.8rem;
+  }
+
+  .copy {
+    font-size: 0.7rem !important;
+    line-height: 1.1 !important;
   }
 }
 
 
-@media (width <= 320px) {
-  .txt-1 {
-    font-size: 0.8rem;
+@media (max-width: 268px) {
+  .formulario input{
+    width: 200px;
+    text-align: center;
   }
 
-  .titulo-contato {
-    font-size: 1rem;
-  }
-
-  .flex-contato p {
-    font-size: 0.8rem;
-  }
-  
-  .direito-reservados img {
+  .formulario button {
     width: 200px;
   }
 
-  .flex-email p {
-    font-size: 0.8rem;
+  .formulario textarea {
+    width: 200px;
   }
 
-  .copywirite {
-    font-size: 0.9rem;
-    line-height: 1.2;
+  .flex-formulario {
+    margin: 0 auto;
   }
+
 }
