@@ -1,159 +1,145 @@
+
 .bg-footer {
   background: #000;
-  color: white;
 }
 
-.copy {
-  text-align: center;
-  padding: 20px;
+.marca-footer {
+  margin-bottom: 32px;
+}
+
+.bg-footer h3 {
+  color:  #fff;
 }
 
 .container-footer {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 40px;
 }
 
-.formulario {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.copy {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
-.flex-formulario input {
-  width: 250px;
-  height: 30px;
-  margin-bottom: 12px;
-}
-
-.flex-formulario textarea {
-  width: 250px;
-}
-
-.flex-formulario button {
-  margin-top: 12px;
-}
-
-.flex-redes {
-  display: flex;
-  gap: 8px;
+.informacoes-footer, .formulario {
+  justify-self: center;
 }
 
 .funcionamento {
   margin-bottom: 32px;
 }
 
-.redes-sociais {
-  display: flex;
-  gap: 20px;
-}
-
-.endereco-text {
+.endereco-rua {
   margin-bottom: 32px;
 }
 
-.informacoes-footer img {
-  margin-bottom: 40px;
+.endereco-email {
+  margin-bottom: 32px;
+}
+
+
+
+.endereco-wha {
+  margin-bottom: 32px;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 30px;
+}
+
+.flex-redes {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .endereco h3 {
   margin-bottom: 4px;
 }
 
-.formulario input,
-textarea {
-  border: 2px solid var(--cor-c2);
+.endereco-rua h3 {
+  margin-bottom: 4px;
+}
+
+/* formulário */
+.formulario input {
+  width: 250px;
+  padding: 10px;
   background: #000;
+  color: #fff;
+  border-color: var(--cor-c3);
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.texto-footer {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.formulario textarea {
+  width: 250px;
+  padding: 0px 10px;
+  background: #000;
+  border-color: var(--cor-c3);
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: #fff;
   border-radius: 4px;
 }
 
-.formulario button {
+.botao-form {
   width: 250px;
   border: 0;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  letter-spacing: 0.04rem;
+  text-transform: uppercase !important;
+  letter-spacing: 0.02rem;
 }
 
-.formulario h3 {
-  width: 250px;
-  text-align: center;
+.div-botao {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
-.informacoes-footer,
-.formulario {
-  justify-self: center;
-}
-
-@media (max-width: 450px) {
+/* responsivo */
+@media (max-width : 1000px) {
   .container-footer {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
+}
 
-  .redes-sociais {
-    justify-self: center;
-  }
-
-  .informacoes-footer div h3 {
+@media (max-width : 500px) {
+  .container-footer h3 {
     font-size: 1.2rem;
   }
 
-  .informacoes-footer div p {
-    font-size: 1rem;
-  }
-  .copy {
-    font-size: 0.9rem !important;
-    line-height: 1.1 !important;
-  }
-}
-
-@media (max-width: 320px) {
-  .informacoes-footer div h3 {
+  .container-footer p {
     font-size: 1rem;
   }
 
-  .marca-footer {
-    width: 200px;
-    margin: auto;
-  }
-
-  .funcionamento,
-  .endereco-rua,
-  .endereco-email,
-  .redes-sociais {
-    justify-self: center;
-  }
-
-  .endereco-wha {
-    display: flex;
-    align-items: start;
-    gap: 8px;
-    justify-content: center;
-  }
-
-
-  .informacoes-footer div p {
+  .texto-footer {
     font-size: 0.8rem;
   }
 
-  .copy {
-    font-size: 0.7rem !important;
-    line-height: 1.1 !important;
-  }
 }
 
 
-@media (max-width: 268px) {
-  .formulario input{
-    width: 200px;
-    text-align: center;
+@media (max-width: 320px) {
+  .container-footer h3 {
+    font-size: 1rem;
   }
 
-  .formulario button {
+  .formulario input {
     width: 200px;
   }
 
@@ -161,8 +147,27 @@ textarea {
     width: 200px;
   }
 
-  .flex-formulario {
-    margin: 0 auto;
+  .formulario h3 {
+    text-align: center;
   }
 
+  .formulario button {
+    width: 200px;
+  }
+
+  .container-footer p {
+    font-size: 0.9rem;
+  }
+
+  .marca-footer {
+    width: 200px;
+  }
+
+  .texto-footer {
+    font-size: 0.7rem;
+  }
+
+  .informacoes-footer div {
+    justify-self: center;
+  }
 }
