@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="menu">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Playfair+Display+SC&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -25,16 +25,16 @@
       <a class="animate__animated animate__fadeInLeft" href="./"><img src="./img/marca.svg" alt="marca"></a>
       <nav aria-label="navegação-primaria">
         <ul class="menu-links">
-          <li><a href="#planos">Estrutura</a></li>
-          <li><a href="#novidades">Modalidades</a></li>
-          <li><a href="#contato">Planos</a></li>
+          <li><a href="./estrutura/page2.html">Estrutura</a></li>
+          <li><a href="#modalidade">Modalidades</a></li>
+          <li><a href="#plano">Planos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="bg-introducao">
+  <section class="bg-introducao" id="introducao">
     <div class="introducao-grid">
       <div>
         <p class="poppins-semibold">Um espaço fitness que inspira você a alcançar seus objetivos!</p>
@@ -69,7 +69,7 @@
     </div>
   </section>
 
-  <section class="modalidades-bg">
+  <section class="modalidades-bg" id="modalidade">
     <div class="modalidade-container">
       <div>
         <h2 class="poppins-semibold">Nossas<br> <span class="cor-p1">modalidades</span></h2>
@@ -96,34 +96,7 @@
       </ul>
     </div>
   </section>
-  <!-- 
-  <section class="bg-diferencial">
-    <div class="alinhar-conteudo">
-      <h2 class="titulo-diferencial">Conheça os nossos <br> <span>diferenciais</span></h2>
-      <ul class="flex-diferencial">
-        <li class="animate__animated animate__fadeInLeft">
-          <img src="./img/icones-diferenciais/icone-1.svg" alt="" width="100" height="100">
-          <p class="musculacao">Musculação</p>
-        </li>
-
-        <li class="ambiente animate__animated animate__fadeInLeft">
-          <img src="./img/icones-diferenciais/icone-2.svg" alt="" width="100" height="100">
-          <p>Ambiente climatizado</p>
-        </li>
-
-        <li class="animate__animated animate__fadeInLeft">
-          <img src="./img/icones-diferenciais/icone-3.svg" alt="" width="100" height="100">
-          <p class="Equipamento">Equipamentos Modernos</p>
-        </li>
-
-        <li class="animate__animated animate__fadeInLeft">
-          <img class="img-app" src="./img/icones-diferenciais/icone-4.svg" alt="" width="100" height="100">
-          <p class="app">App Evolution</p>
-        </li>
-      </ul>
-    </div>
-  </section> -->
-  <section class="bg-planos" id="planos">
+  <section class="bg-planos" id="plano">
     <div class="container-planos">
       <h1 class="titulo-plano">Escolha o seu Plano<span class="ponto">.</span></h1>
       <ul class="flex-plano">
@@ -229,11 +202,13 @@
       </ul>
     </div>
   </section>
-  <footer class="bg-footer">
+  <footer class="bg-footer" id="contato">
     <div class="container-footer">
       <div class="informacoes-footer">
         <div>
-          <img class="marca-footer" src="./img/marca.svg" alt="">
+          <a href="#menu">
+            <img class="marca-footer" src="./img/marca.svg" alt="">
+          </a>
         </div>
 
         <div class="funcionamento">
@@ -251,14 +226,14 @@
           <h3 class="poppins-titulo-footer">Email:</h3>
           <div class="flex-redes">
             <img src="./img/icones-diferenciais/email.svg" alt="" width="20" height="20">
-            <p class="roboto-texto-footer cor-c6">mateusmarizdelima@hotmail.com</p>
+            <p class="roboto-texto-footer cor-c6">borgesmateus099@gmail.com</p>
           </div>
         </div>
         <div class="endereco endereco-wha">
           <h3 class="poppins-titulo-footer">Whatsapp:</h3>
           <div class="flex-redes">
             <img src="./img/icones-diferenciais/whatsapp 1.svg" alt="">
-            <p class="roboto-texto-footer cor-c6">+55 16 99192 - 4415</p>
+            <p class="roboto-texto-footer cor-c6">+55 16 9997371141</p>
           </div>
         </div>
         <div class="redes-sociais">
@@ -281,7 +256,7 @@
           <textarea rows="4">
           </textarea><br>
 
-          <button class="botao">Enviar</button>
+          <button disabled class="botao">Enviar</button>
         </form>
       </div>
     </div>

@@ -6,7 +6,7 @@
 @import "./introducao.css";
 @import "./modalidade.css";
 @import "./cliente.css";
-@import "./perguntas.css";
+@import "../estrutura/estrutura.css";
 
 /* css reset listas */
 body {

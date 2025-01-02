@@ -1,0 +1,33 @@
+.container-img img {
+  margin: 0px;
+  width: 100%;
+}
+
+
+.container-img {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 10px;
+}
+
+@media (max-width: 500px) {
+  .container-img {
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  }
+
+  .texto-estrutura {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 300px) {
+  .texto-estrutura {
+    font-size: 1rem !important;
+  }
+
+  .container-img {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+}
