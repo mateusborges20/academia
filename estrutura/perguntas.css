@@ -216,3 +216,29 @@ dt::before {
     width: 230px;
   }
 }
+
+.js-accordion dt::after {
+  content: "↴";
+  margin-left: 15px;
+}
+
+.js-accordion dd {
+  height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: height 0.3s ease, padding 0.3s ease; /* Adicionando transição para height e padding */
+}
+
+.js-accordion dd.ativo {
+  height: auto; /* Altura automática para o conteúdo */
+  padding-top: 10px; /* Adicionando padding top */
+  padding-bottom: 10px; /* Adicionando padding bottom */
+}
+
+.js-accordion dt.ativo::after {
+  content: "⬏";
+}
+
+
+
