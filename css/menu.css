@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
 .bg-menu {
   background: #000;
 }
@@ -6,87 +11,114 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
   align-items: center;
 }
 
-
 .menu-links {
   display: flex;
-  flex-wrap: wrap;
   gap: 40px;
 }
 
 .menu-links a {
-  display: inline-block;
   text-decoration: none;
   color: #fff;
   font-size: 1.25rem;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal;
-  padding: 12px 0px;
-  border-radius: 2px;
-  position: relative;
+}
+
+.menu-links a:hover {
+  color: #ccc;
+}
+
+#btn-mobile {
+  display: none; /* Esconde o botão por padrão */
+  background: none;
+  border: none;
   cursor: pointer;
-  position: relative;
 }
 
-.menu-links a::after {
-  box-sizing: border-box;
-  content: "";
-  width: 2px;
-  height: 2px;
+/* Estilo do hambúrguer (três traços) */
+#hamburguer {
   display: block;
-  transition: width 0.7s ease;
+  width: 30px; /* Largura das linhas */
+  height: 3px; /* Altura da linha principal */
+  background-color: #fff; /* Cor da linha principal */
+  position: relative; /* Necessário para os pseudo-elementos */
+}
+
+/* Linhas adicionais (pseudo-elementos) */
+#hamburguer::before,
+#hamburguer::after {
+  content: "";
   position: absolute;
+  width: 30px; /* Largura das linhas adicionais */
+  height: 3px; /* Altura das linhas adicionais */
+  background-color: #fff; /* Cor das linhas adicionais */
 }
 
-.menu-links a:hover::after {
-  width: 100%;
-  background: #fff;
+/* Linha superior (antes) */
+#hamburguer::before {
+  top: -8px;
 }
 
-/* responsivo */
+/* Linha inferior (depois) */
+#hamburguer::after {
+  top: 8px; /* Move a linha inferior para baixo */
+}
 
-@media (max-width: 1300px) {
-  .container-principal {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+/* Media query para telas menores que 900px */
+@media (max-width: 900px) {
+  #btn-mobile {
+    display: block; /* Exibe o botão em telas menores */
+    z-index: 1100; /* Garante que o botão fique acima do menu */
+    position: relative;
+    padding: 10px; /* Espaçamento para clicar melhor no botão */
   }
+
   .menu-links {
-    justify-content: center;
-    gap: 20px;
+    display: flex;
+    flex-direction: column; /* Alinha os links verticalmente */
+    position: fixed; /* Menu fixo para ocupar a tela toda */
+    top: 0; /* Alinha ao topo da tela */
+    right: -100%; /* Inicialmente fora da tela à direita */
+    width: 70%; /* Largura do menu (ajuste conforme necessário) */
+    height: 100%; /* Altura total da tela */
+    background-color: #111; /* Fundo cinza escuro para o menu dropdown */
+    padding-top: 60px; /* Espaçamento interno no topo */
+    z-index: 1000; /* Coloca acima de outros elementos, mas abaixo do botão */
+    transition: right 0.3s ease-in-out; /* Transição suave ao abrir/fechar */
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+  }
+
+  nav.active .menu-links {
+    right: 0; /* Move o menu para dentro da tela ao ativar */
   }
 
   .menu-links a {
-    background: #ccc;
-    color: #111;
-    padding: 8px 16px;
-  }
-
-  .menu-links a:hover::after {
-    display: none;
-  }
-
-  .container-principal a img {
-    width: 200px;
+    padding: 10px 20px; /* Espaçamento interno dos links no mobile */
+    color: #fff; /* Cor do texto no mobile */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte no mobile */
+    text-align: left; /* Alinha o texto à esquerda no mobile */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha separadora entre os links */
+    margin-left: 10px; /* Adiciona margem à esquerda dos links (ajuste conforme necessário) */
   }
 }
 
-@media (width <= 220px) {
-  .container-principal a img {
-    width: 150px;
-  }
+/* Transformação do hambúrguer em "X" quando ativo */
+/* Remove as linhas e transforma em "X" ao ativar o menu */
 
-  .menu-links a {
-    padding: 4px;
-  }
-
-  .menu-links a:hover::after {
-    display: none;
-  }
+#hamburguer.active {
+  background-color: transparent; /* Remove a linha central ao virar "X" */
 }
+
+#hamburguer.active::before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#hamburguer.active::after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+

@@ -19,7 +19,6 @@ function scrollToSection(event) {
     block: 'start',
   })
   
-  
 }
 
 linksInternos.forEach((link) => {

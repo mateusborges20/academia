@@ -44,7 +44,8 @@
 }
 
 .botao:hover {
-  background-image: linear-gradient(#ffbf00, #dc5c0d);
+  background-image: linear-gradient(to right, #ffffff, #f0f0f0);
+
 }
 
 .flex-preco {

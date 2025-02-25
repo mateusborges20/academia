@@ -35,10 +35,10 @@ img {
 
 .botao {
   padding: 12px 24px;
-  background-image: linear-gradient(#ffbf00, #f2a50c);
+  background: #000;
   text-decoration: none;
   text-transform: capitalize;
-  color: #332200;
+  color: #ccc;
   display: block;
   border-radius: 4px;
   font-family: "Poppins", sans-serif;
